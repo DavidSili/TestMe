@@ -392,7 +392,7 @@ if ($a=="1") {
 		else $lmt =" LIMIT ".$d;
 		switch ($e) {
 			case '0':
-				if ($c!="sva") $uslov.=" AND";
+				if ($c!="sva" AND $c!="po grupama") $uslov.=" AND";
 				$ordby='`ID`';
 				if ($od =="" AND $do !="") {
 					$uslov.=' ID<='.$do;

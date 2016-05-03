@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3254b849-b1f9-490d-8549-ad7c806f04a8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/podesavanja.php" afterPath="$PROJECT_DIR$/podesavanja.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stampa.php" afterPath="$PROJECT_DIR$/stampa.php" />
     </list>
     <ignored path="TestMe.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,43 +27,43 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.51724136">
+            <state vertical-scroll-proportion="0.32586208">
               <caret line="415" column="0" selection-start-line="415" selection-start-column="0" selection-end-line="415" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1462271842364" expanded="true" signature="486:511" placeholder="SELECT * FRO..podesavanja..." />
-                <marker date="1462271842364" expanded="true" signature="1658:1668" placeholder="..." />
-                <marker date="1462271842364" expanded="true" signature="2043:2053" placeholder="..." />
-                <marker date="1462271842364" expanded="true" signature="3930:3977" placeholder="SELECT grupa..${$table}..." />
-                <marker date="1462271842364" expanded="true" signature="5829:5846" placeholder="..." />
-                <marker date="1462271842364" expanded="true" signature="5896:5906" placeholder="..." />
-                <marker date="1462271842364" expanded="true" signature="5907:5923" placeholder="..." />
-                <marker date="1462271842364" expanded="true" signature="6136:6152" placeholder="..." />
-                <marker date="1462271842364" expanded="true" signature="6228:6238" placeholder="..." />
-                <marker date="1462271842364" expanded="true" signature="6349:6359" placeholder="..." />
-                <marker date="1462271842364" expanded="true" signature="6454:6542" placeholder="..." />
-                <marker date="1462271842364" expanded="true" signature="11672:11697" placeholder="..." />
-                <marker date="1462271842364" expanded="true" signature="12950:12964" placeholder="SELECT * FRO..${$table}..." />
-                <marker date="1462271842364" expanded="true" signature="12950:12991" placeholder="SELECT * FRO..${$table}..." />
-                <marker date="1462271842364" expanded="true" signature="12950:12999" placeholder="SELECT * FRO..${$table}..." />
-                <marker date="1462271842364" expanded="true" signature="12950:13000" placeholder="SELECT * FRO..${$table}..." />
-                <marker date="1462271842364" expanded="true" signature="16745:16918" placeholder="INSERT INTO ${$table}..." />
-                <marker date="1462271842364" expanded="true" signature="17120:17154" placeholder="..." />
-                <marker date="1462271842364" expanded="true" signature="17269:17280" placeholder="..." />
-                <marker date="1462271842364" expanded="true" signature="17443:17471" placeholder="..." />
-                <marker date="1462271842364" expanded="true" signature="17597:17608" placeholder="..." />
-                <marker date="1462271842364" expanded="true" signature="17978:18006" placeholder="..." />
-                <marker date="1462271842364" expanded="true" signature="18144:18170" placeholder="..." />
-                <marker date="1462271842364" expanded="true" signature="18223:18251" placeholder="..." />
-                <marker date="1462271842364" expanded="true" signature="18301:18317" placeholder="..." />
-                <marker date="1462271842364" expanded="true" signature="18408:18425" placeholder="..." />
-                <marker date="1462271842364" expanded="true" signature="19680:19727" placeholder="SELECT * FRO..${$table}..." />
-                <marker date="1462271842364" expanded="true" signature="20274:20341" placeholder="..." />
-                <marker date="1462271842364" expanded="true" signature="20529:20555" placeholder="..." />
-                <marker date="1462271842364" expanded="true" signature="20891:20917" placeholder="..." />
-                <marker date="1462271842364" expanded="true" signature="20963:21019" placeholder="..." />
+                <marker date="1462277089986" expanded="true" signature="486:511" placeholder="SELECT * FRO..podesavanja..." />
+                <marker date="1462277089986" expanded="true" signature="1658:1668" placeholder="..." />
+                <marker date="1462277089986" expanded="true" signature="2043:2053" placeholder="..." />
+                <marker date="1462277089986" expanded="true" signature="3930:3977" placeholder="SELECT grupa..${$table}..." />
+                <marker date="1462277089986" expanded="true" signature="5829:5846" placeholder="..." />
+                <marker date="1462277089986" expanded="true" signature="5896:5906" placeholder="..." />
+                <marker date="1462277089986" expanded="true" signature="5907:5923" placeholder="..." />
+                <marker date="1462277089986" expanded="true" signature="6136:6152" placeholder="..." />
+                <marker date="1462277089986" expanded="true" signature="6228:6238" placeholder="..." />
+                <marker date="1462277089986" expanded="true" signature="6349:6359" placeholder="..." />
+                <marker date="1462277089986" expanded="true" signature="6454:6542" placeholder="..." />
+                <marker date="1462277089986" expanded="true" signature="11672:11697" placeholder="..." />
+                <marker date="1462277089986" expanded="true" signature="12971:12985" placeholder="SELECT * FRO..${$table}..." />
+                <marker date="1462277089986" expanded="true" signature="12971:13012" placeholder="SELECT * FRO..${$table}..." />
+                <marker date="1462277089986" expanded="true" signature="12971:13020" placeholder="SELECT * FRO..${$table}..." />
+                <marker date="1462277089986" expanded="true" signature="12971:13021" placeholder="SELECT * FRO..${$table}..." />
+                <marker date="1462277089986" expanded="true" signature="16766:16939" placeholder="INSERT INTO ${$table}..." />
+                <marker date="1462277089986" expanded="true" signature="17141:17175" placeholder="..." />
+                <marker date="1462277089986" expanded="true" signature="17290:17301" placeholder="..." />
+                <marker date="1462277089986" expanded="true" signature="17464:17492" placeholder="..." />
+                <marker date="1462277089986" expanded="true" signature="17618:17629" placeholder="..." />
+                <marker date="1462277089986" expanded="true" signature="17999:18027" placeholder="..." />
+                <marker date="1462277089986" expanded="true" signature="18165:18191" placeholder="..." />
+                <marker date="1462277089986" expanded="true" signature="18244:18272" placeholder="..." />
+                <marker date="1462277089986" expanded="true" signature="18322:18338" placeholder="..." />
+                <marker date="1462277089986" expanded="true" signature="18429:18446" placeholder="..." />
+                <marker date="1462277089986" expanded="true" signature="19701:19748" placeholder="SELECT * FRO..${$table}..." />
+                <marker date="1462277089986" expanded="true" signature="20295:20362" placeholder="..." />
+                <marker date="1462277089986" expanded="true" signature="20550:20576" placeholder="..." />
+                <marker date="1462277089986" expanded="true" signature="20912:20938" placeholder="..." />
+                <marker date="1462277089986" expanded="true" signature="20984:21040" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -261,37 +259,37 @@
             <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1462271842364" expanded="true" signature="486:511" placeholder="SELECT * FRO..podesavanja..." />
-            <marker date="1462271842364" expanded="true" signature="1658:1668" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="2043:2053" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="3930:3977" placeholder="SELECT grupa..${$table}..." />
-            <marker date="1462271842364" expanded="true" signature="5829:5846" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="5896:5906" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="5907:5923" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="6136:6152" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="6228:6238" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="6349:6359" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="6454:6542" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="11672:11697" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="12950:12964" placeholder="SELECT * FRO..${$table}..." />
-            <marker date="1462271842364" expanded="true" signature="12950:12991" placeholder="SELECT * FRO..${$table}..." />
-            <marker date="1462271842364" expanded="true" signature="12950:12999" placeholder="SELECT * FRO..${$table}..." />
-            <marker date="1462271842364" expanded="true" signature="12950:13000" placeholder="SELECT * FRO..${$table}..." />
-            <marker date="1462271842364" expanded="true" signature="16745:16918" placeholder="INSERT INTO ${$table}..." />
-            <marker date="1462271842364" expanded="true" signature="17120:17154" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="17269:17280" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="17443:17471" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="17597:17608" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="17978:18006" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="18144:18170" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="18223:18251" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="18301:18317" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="18408:18425" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="19680:19727" placeholder="SELECT * FRO..${$table}..." />
-            <marker date="1462271842364" expanded="true" signature="20274:20341" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="20529:20555" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="20891:20917" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="20963:21019" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="486:511" placeholder="SELECT * FRO..podesavanja..." />
+            <marker date="1462277089986" expanded="true" signature="1658:1668" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="2043:2053" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="3930:3977" placeholder="SELECT grupa..${$table}..." />
+            <marker date="1462277089986" expanded="true" signature="5829:5846" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="5896:5906" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="5907:5923" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="6136:6152" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="6228:6238" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="6349:6359" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="6454:6542" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="11672:11697" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="12971:12985" placeholder="SELECT * FRO..${$table}..." />
+            <marker date="1462277089986" expanded="true" signature="12971:13012" placeholder="SELECT * FRO..${$table}..." />
+            <marker date="1462277089986" expanded="true" signature="12971:13020" placeholder="SELECT * FRO..${$table}..." />
+            <marker date="1462277089986" expanded="true" signature="12971:13021" placeholder="SELECT * FRO..${$table}..." />
+            <marker date="1462277089986" expanded="true" signature="16766:16939" placeholder="INSERT INTO ${$table}..." />
+            <marker date="1462277089986" expanded="true" signature="17141:17175" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="17290:17301" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="17464:17492" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="17618:17629" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="17999:18027" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="18165:18191" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="18244:18272" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="18322:18338" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="18429:18446" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="19701:19748" placeholder="SELECT * FRO..${$table}..." />
+            <marker date="1462277089986" expanded="true" signature="20295:20362" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="20550:20576" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="20912:20938" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="20984:21040" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -346,43 +344,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51724136">
+        <state vertical-scroll-proportion="0.32586208">
           <caret line="415" column="0" selection-start-line="415" selection-start-column="0" selection-end-line="415" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1462271842364" expanded="true" signature="486:511" placeholder="SELECT * FRO..podesavanja..." />
-            <marker date="1462271842364" expanded="true" signature="1658:1668" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="2043:2053" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="3930:3977" placeholder="SELECT grupa..${$table}..." />
-            <marker date="1462271842364" expanded="true" signature="5829:5846" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="5896:5906" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="5907:5923" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="6136:6152" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="6228:6238" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="6349:6359" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="6454:6542" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="11672:11697" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="12950:12964" placeholder="SELECT * FRO..${$table}..." />
-            <marker date="1462271842364" expanded="true" signature="12950:12991" placeholder="SELECT * FRO..${$table}..." />
-            <marker date="1462271842364" expanded="true" signature="12950:12999" placeholder="SELECT * FRO..${$table}..." />
-            <marker date="1462271842364" expanded="true" signature="12950:13000" placeholder="SELECT * FRO..${$table}..." />
-            <marker date="1462271842364" expanded="true" signature="16745:16918" placeholder="INSERT INTO ${$table}..." />
-            <marker date="1462271842364" expanded="true" signature="17120:17154" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="17269:17280" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="17443:17471" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="17597:17608" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="17978:18006" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="18144:18170" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="18223:18251" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="18301:18317" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="18408:18425" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="19680:19727" placeholder="SELECT * FRO..${$table}..." />
-            <marker date="1462271842364" expanded="true" signature="20274:20341" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="20529:20555" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="20891:20917" placeholder="..." />
-            <marker date="1462271842364" expanded="true" signature="20963:21019" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="486:511" placeholder="SELECT * FRO..podesavanja..." />
+            <marker date="1462277089986" expanded="true" signature="1658:1668" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="2043:2053" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="3930:3977" placeholder="SELECT grupa..${$table}..." />
+            <marker date="1462277089986" expanded="true" signature="5829:5846" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="5896:5906" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="5907:5923" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="6136:6152" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="6228:6238" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="6349:6359" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="6454:6542" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="11672:11697" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="12971:12985" placeholder="SELECT * FRO..${$table}..." />
+            <marker date="1462277089986" expanded="true" signature="12971:13012" placeholder="SELECT * FRO..${$table}..." />
+            <marker date="1462277089986" expanded="true" signature="12971:13020" placeholder="SELECT * FRO..${$table}..." />
+            <marker date="1462277089986" expanded="true" signature="12971:13021" placeholder="SELECT * FRO..${$table}..." />
+            <marker date="1462277089986" expanded="true" signature="16766:16939" placeholder="INSERT INTO ${$table}..." />
+            <marker date="1462277089986" expanded="true" signature="17141:17175" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="17290:17301" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="17464:17492" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="17618:17629" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="17999:18027" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="18165:18191" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="18244:18272" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="18322:18338" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="18429:18446" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="19701:19748" placeholder="SELECT * FRO..${$table}..." />
+            <marker date="1462277089986" expanded="true" signature="20295:20362" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="20550:20576" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="20912:20938" placeholder="..." />
+            <marker date="1462277089986" expanded="true" signature="20984:21040" placeholder="..." />
           </folding>
         </state>
       </provider>
