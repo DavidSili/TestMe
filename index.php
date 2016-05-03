@@ -27,7 +27,7 @@ $mysqli->query("SET NAMES 'utf8'") or die;
 <div id="wrapper">
 	<div id="header" style="background:#<?php echo $mchbcg; ?>;color:#<?php echo $mchf; ?>">
 		<div style="float:left">
-			<a href="index.php" style="padding:0 0 5px 10px;color:#<?php echo $mchtm; ?>;text-decoration:none">test.ME</a><span style="color:#<?php echo $mchver; ?>"> 1.4</span>
+			<a href="index.php" style="padding:0 0 5px 10px;color:#<?php echo $mchtm; ?>;text-decoration:none">test.ME</a><span style="color:#<?php echo $mchver; ?>"> 1.5</span>
 			<div style="padding-left:10px;width:150px">
 				<form method="get" action="index.php">
 	<?php
@@ -42,7 +42,7 @@ $mysqli->query("SET NAMES 'utf8'") or die;
 	if (isset($_GET["d"])) $d=$_GET["d"];
 	else $d='10';
 	if (isset($_GET["e"])) $e=$_GET["e"];
-	else $e='redom';
+	else $e=$rndq;
 	if (isset($_GET["f"])) $f=$_GET["f"];
 	else $f="";
 	if (isset($_GET["od"])) $od=$_GET["od"];
@@ -112,20 +112,22 @@ if ($c!="po grupama") $f="";
 		
 ?>			
 			</select>
-				<span style="margin-left:15px">Ako testovi, test:</span>
-				<select name="f" style="width:130px">
+				<span style="margin-left:15px" title="Ako je ovo polje prazno a želite da izaberete postojeću grupu pitanja, na skroz levom 1. padajućem meniju izaberite željeni predmet a na meniju ispod njega ostavite prazno polje i pritisnite dugme 'uradi'">Ako testovi, test:</span>
+				<select name="f" style="width:130px" title="Ako je ovo polje prazno a želite da izaberete postojeću grupu pitanja, na skroz levom 1. padajućem meniju izaberite željeni predmet a na meniju ispod njega ostavite prazno polje i pritisnite dugme 'uradi'">
 <?php
 					echo '<option';
 					if ($f=="") echo ' selected';
 					echo '></option>';
-					$sql="SELECT grupa FROM ".$table." GROUP BY grupa";
-					$result=$mysqli->query($sql) or die;
-					while($row=$result->fetch_assoc()) {
-						if (isset($row['grupa'])) {
-							$grupa=$row['grupa'];
-							echo '<option';
-							if ($f==$grupa) echo ' selected';
-							echo '>'.$grupa.'</option>';
+					if ($table!=NULL) {
+						$sql = "SELECT grupa FROM " . $table . " GROUP BY grupa";
+						$result = $mysqli->query($sql) or die;
+						while ($row = $result->fetch_assoc()) {
+							if (isset($row['grupa'])) {
+								$grupa = $row['grupa'];
+								echo '<option';
+								if ($f == $grupa) echo ' selected';
+								echo '>' . $grupa . '</option>';
+							}
 						}
 					}
 ?>
@@ -160,15 +162,26 @@ if ($c!="po grupama") $f="";
 				if ($d=="sva") echo ' selected';
 				echo '>sva</option>';
 ?>
-			</select><a class="white" style="margin-left:283px;color:#<?php echo $mchf; ?>" href="stampa.php?table=<?php echo $table ?>">Verzija za štampu</a></br>
+			</select><a class="white" href="<?php
+				if ($table==NULL) {
+					echo '#';
+					$title= 'title="Da bi mogli da štampate pitanja i odgovore, na kroz levom 1. padajućem meniju izaberite željeni predmet a na meniju ispod njega ostavite prazno polje i pritisnite dugme \'uradi\' kako bi vam se pojavila mogućnost za štampanje"';
+					$colortext='aaa;"';
+				}
+				else {
+					echo 'stampa.php?table='.$table;
+					$title="";
+					$colortext=$mchf.';"';
+				}
+			?>" style="margin-left:283px;color:#<?php echo $colortext;echo $title; ?>>Verzija za štampu</a></br>
 			<span style="padding-left:18px">Način izbora:</span>
 			<select name="e" style="width:80px">
 <?php
-				echo '<option';
-				if ($e=="redom") echo ' selected';
+				echo '<option value="0"';
+				if ($e=="0") echo ' selected';
 				echo '>redom</option>';
-				echo '<option';
-				if ($e=="slučajno") echo ' selected';
+				echo '<option value="1"';
+				if ($e=="1") echo ' selected';
 				echo '>slučajno</option>';
 ?>
 			</select>
@@ -194,6 +207,7 @@ if ($a=="1") {
 		
 			$ID=$_POST['ID'.$i];
 			$pitanje=$_POST['pitanje'.$i];
+			$pitanje=stripslashes($pitanje);
 			$odgovor=$_POST['odgovor'.$i];
 			$odgovora=$_POST['odgovora'.$i];
 			$tacnih=$_POST['tacnih'.$i];
@@ -342,8 +356,8 @@ if ($a=="1") {
 		}
 
 		echo '<div style="height:26px;background:#'.$mcfbcg.';padding-top:4px;color:#'.$mcff.';font-weight:bold;padding-top:4px">';
-		$sledeci=$od+$counter_a;
-		echo '<a class="white" href="index.php?a='.$a.'&table='.$table.'&c='.$c.'&d='.$d.'&e='.$e.'&f='.$f.'&od='.$od.'&do='.$do.'" style="margin:0 20px 0 5px;color:#'.$mcff.'">Ponovi test sa istim parametrima</a><a class="white" href="index.php?a='.$a.'&table='.$table.'&c='.$c.'&d='.$d.'&e='.$e.'&od='.$sledeci.'" style="'.$mcff.'">Uradi sledeći test u nizu</a>';
+		$sledeci=$ID+1;
+		echo '<a class="white" href="index.php?a='.$a.'&table='.$table.'&c='.$c.'&d='.$d.'&e='.$e.'&f='.$f.'&od='.$od.'&do='.$do.'" style="margin:0 20px 0 5px;color:#'.$mcff.'">Ponovi test sa istim parametrima</a><a class="white" href="index.php?a='.$a.'&table='.$table.'&c='.$c.'&d='.$d.'&e='.$e.'&f='.$f.'&od='.$sledeci.'" style="'.$mcff.'">Uradi sledeći test u nizu</a>';
 		echo '<span style="float:right;margin:0 10px">';
 		if ($counterok==$counter_a) echo '| Čestitamo! Svih '.$counter_a.' odgovora su bili tačni';
 			else echo '| Tačnih odgovora '.$counterok.' od ukupno '.$counter_a;
@@ -352,53 +366,53 @@ if ($a=="1") {
 	}
 	else {
 		$uslov="";
+		if ($c!="sva" OR $od!="" OR $do!="") $uslov=" WHERE ";
 		switch ($c) {
 			case 'novija':
-				$uslov=' WHERE `no`<"3"';
+				$uslov.='`no`<"3"';
 				break;
 			case 'starija':
-				$uslov=' WHERE `no`>"3"';
+				$uslov.='`no`>"3"';
 				break;
 			case 'za prolaz':
-				$uslov=' WHERE `p`<="0.8" OR `no`<"3"';
+				$uslov.='`p`<="0.8" OR `no`<"3"';
 				break;
 			case 'slabija':
-				$uslov=' WHERE `p`<"0.5"';
+				$uslov.='`p`<"0.5"';
 				break;
 			case 'najslabija':
-				$uslov=' WHERE `p`<"0.2"';
+				$uslov.='`p`<"0.2"';
+				break;
+			case 'po grupama':
+				$uslov.='grupa="'.$f.'"';
 				break;
 		}
 		
-		if ($d=="sva") $d=100000;
-		
+		if ($d=="sva") $lmt="";
+		else $lmt =" LIMIT ".$d;
 		switch ($e) {
-			case 'redom':
+			case '0':
+				if ($c!="sva") $uslov.=" AND";
 				$ordby='`ID`';
-				if ($od=="") $lmt=$d;
-					elseif ($do=="") {
-					$od=$od-1;
-					$lmt=$od.','.$d;
-					}
-					else {
-					$od=$od-1;
-					$dox=$do-$od;
-					$lmt=$od.','.$dox;
-					}
+				if ($od =="" AND $do !="") {
+					$uslov.=' ID<='.$do;
+				}
+				elseif ($do =="" AND $od !="") {
+					$uslov.=' ID>='.$od;
+				}
+				elseif ($od !="" AND $do !="") {
+					$uslov.=' ID>='.$od.' AND ID<='.$do;
+				}
 				break;
-			case 'slučajno':
+			case '1':
 				$ordby='RAND()';
-				$lmt=$d;
+				$lmt=" LIMIT ".$d;
 				break;
 		}
-		
-		$where="";
-		if ($c=="po grupama") $where=' WHERE grupa="'.$f.'"';
 		
 		$counter_a=1;
 		echo '<form method="POST" action="index.php?a=1&table='.$table.'&b=1&c='.$c.'&d='.$d.'&e='.$e.'&f='.$f.'&od='.$od.'&do='.$do.'">';
-			$sql ='SELECT * FROM '.$table.$where;
-			$sql.=$uslov.' ORDER BY '.$ordby.' LIMIT '.$lmt;
+			$sql ='SELECT * FROM '.$table.$uslov.' ORDER BY '.$ordby.$lmt;
 			$result = $mysqli->query($sql) or die;
 			while($row = $result->fetch_assoc()){
 				$ID=$row['ID'];
@@ -514,7 +528,7 @@ if ($a==2) {
 				if ($resenje!="") {
 				
 					$sql='INSERT INTO '.$table.' (`pitanje`,`odgovor`,`odgovora`,`tacnih`,`resenje`,`grupa`) VALUES ("'.$q.'","'.$odgovor.'","'.$count_a.'","'.$tacnih.'","'.$resenje.'","'.$ygrupa.'")';
-					mysql_query($sql) or die (mysql_error());
+					mysqli_query($mysqli,$sql) or die;
 					
 					$prikaz.='<tr><td><table border="1" width="100%"><tr><th align="left">'.$q.'</th>'.$tabela;
 					if (empty($ygrupa)!=true) $prikaz.='<tr><td style="text-align:right;padding-right:5px">grupa: <i>'.$ygrupa.'</i></td></tr>';

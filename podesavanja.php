@@ -4,13 +4,22 @@ $mysqli->query("SET NAMES 'utf8'") or die;
 ?>
 <html>
 <head profile="http://www.w3.org/2005/20/profile">
-<link rel="icon"
-	  type="image/png"
-	  href="favicon.png">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>test.ME | podešavanja</title>
-<link type='text/css' rel='stylesheet' href='style.css' />
-<script type="text/javascript" src="js/jscolor/jscolor.js"></script>
+	<link rel="icon"
+		  type="image/png"
+		  href="favicon.png">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>test.ME | podešavanja</title>
+	<link type='text/css' rel='stylesheet' href='style.css' />
+	<script type="text/javascript" src="js/jscolor/jscolor.js"></script>
+	<style type="text/css">
+		#wrapper input {
+			line-height:20px;
+			vertical-align: middle;
+		}
+		#wrapper select {
+			height:22px;
+		}
+	</style>
 </head>
 <body>
 <?php
@@ -44,7 +53,7 @@ if (isset($_GET['a'])) {
 	<div id="header" style="background:#<?php echo $pchbcg; ?>">
 	
 		<div style="float:left">
-			<a href="index.php" style="padding:0 0 5px 10px;color:#<?php echo $pchtm; ?>; ?>;text-decoration:none">test.ME</a><span style="color:#pchver"> 1.4</span><span style="color:#<?php echo $pchtm; ?>"> - podešavanja</span>
+			<a href="index.php" style="padding:0 0 5px 10px;color:#<?php echo $pchtm; ?>; ?>;text-decoration:none">test.ME</a><span style="color:#pchver"> 1.5</span><span style="color:#<?php echo $pchtm; ?>"> - podešavanja</span>
 		</div>
 	
 	</div>
@@ -52,7 +61,7 @@ if (isset($_GET['a'])) {
 		<div style="padding:5px;border:3px black "><b>Podešavanja izgleda</b></div>
 		<form method="POST" action="podesavanja.php?a=1">
 			<div id="uv1">Glavna strana:</div>
-			<div style="width:800px;height:880px">
+			<div id="wrapper" style="width:800px;height:880px;line-height:26px">
 				<div id="podbox1">
 					boja pozadine gornjeg menija:<br/>
 					boja reči "test.ME":<br/>
