@@ -1,0 +1,56 @@
+#wrapper {
+	font-family:arial;
+	width:800px;
+}
+#header {
+	width:800px;
+	height:80px;
+	padding:10px 0;
+	background:#036;
+	color:#FFF;
+	font-weight:bold;
+}
+#box {
+}
+textarea {
+	font-family:arial;
+}
+.black {
+	color:#000;
+	text-decoration:none;
+	font-family:arial;
+}
+.white {
+	color:#FFF;
+	text-decoration:none;
+	font-family:arial;
+}
+#uv1 {
+	padding-left:40px;
+	font-weight:bold;
+}
+#uv2 {
+	padding-left:80px;
+	width:720px;
+	height:20px;
+	font-weight:bold;
+}
+#podbox1 {
+	width:300px;
+	padding-left:40px;
+	float:left;
+	line-height:26px;
+	text-align:right;
+	margin-right:10px;
+	font-size:16;
+}
+#podbox2 {
+	width:200px;
+	float:left;
+	line-height:26px;
+}
+#podbox3 {
+	width:250px;
+	float:left;
+	line-height:26px;
+}
