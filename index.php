@@ -31,23 +31,23 @@ $mysqli->query("SET NAMES 'utf8'") or die;
 			<div style="padding-left:10px;width:150px">
 				<form method="get" action="index.php">
 	<?php
-	if (isset($_GET["table"])) $table=$_GET["table"];
+	if (isset($_GET["table"])) $table=mysqli_real_escape_string($mysqli,$_GET["table"]);
 	else $table=NULL;
-	if (isset($_GET["a"])) $a=$_GET["a"];
+	if (isset($_GET["a"])) $a=mysqli_real_escape_string($mysqli,$_GET["a"]);
 	else $a=NULL;
-	if (isset($_GET["b"])) $b=$_GET["b"];
+	if (isset($_GET["b"])) $b=mysqli_real_escape_string($mysqli,$_GET["b"]);
 	else $b=NULL;
-	if (isset($_GET["c"])) $c=$_GET["c"];
+	if (isset($_GET["c"])) $c=mysqli_real_escape_string($mysqli,$_GET["c"]);
 	else $c='sva';
-	if (isset($_GET["d"])) $d=$_GET["d"];
+	if (isset($_GET["d"])) $d=mysqli_real_escape_string($mysqli,$_GET["d"]);
 	else $d='10';
-	if (isset($_GET["e"])) $e=$_GET["e"];
-	else $e=$rndq;
-	if (isset($_GET["f"])) $f=$_GET["f"];
+	if (isset($_GET["e"])) $e=mysqli_real_escape_string($mysqli,$_GET["e"]);
+	else $e="";
+	if (isset($_GET["f"])) $f=mysqli_real_escape_string($mysqli,$_GET["f"]);
 	else $f="";
-	if (isset($_GET["od"])) $od=$_GET["od"];
+	if (isset($_GET["od"])) $od=mysqli_real_escape_string($mysqli,$_GET["od"]);
 	else $od="";
-	if (isset($_GET["do"])) $do=$_GET["do"];
+	if (isset($_GET["do"])) $do=mysqli_real_escape_string($mysqli,$_GET["do"]);
 	else $do="";
 
 if ($c!="po grupama") $f="";
@@ -85,7 +85,7 @@ if ($c!="po grupama") $f="";
 		</div>
 		<div style="float:left;width:3px;height:80px;background:white"></div>
 		<div>
-			<span style="padding-left:19px">Vrsta pitanja:</span>
+			<span style="padding-left:20px">Vrsta pitanja:</span>
 			<select name="c" style="width:80px">
 <?php
 				echo '<option';
@@ -174,7 +174,7 @@ if ($c!="po grupama") $f="";
 					$colortext=$mchf.';"';
 				}
 			?>" style="margin-left:283px;color:#<?php echo $colortext;echo $title; ?>>Verzija za štampu</a></br>
-			<span style="padding-left:18px">Način izbora:</span>
+			<span style="padding-left:20px">Način izbora:</span>
 			<select name="e" style="width:80px">
 <?php
 				echo '<option value="0"';

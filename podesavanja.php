@@ -30,7 +30,7 @@ if (isset($_GET['a'])) {
 	while($row=$result->fetch_assoc()) {
 		$element=$row['element'];
 		$svojstvo=$row['svojstvo'];
-		${$element}=$_POST[$element];
+		${$element}=mysqli_real_escape_string($mysqli,$_POST[$element]);
 
 	$sql='UPDATE podesavanja SET `svojstvo`="'.${$element}.'" WHERE `element`="'.$element.'"';
 	mysqli_query($mysqli,$sql) or die;
@@ -43,7 +43,7 @@ if (isset($_GET['a'])) {
 	while($row=$result->fetch_assoc()) {
 		$element=$row['element'];
 		$svojstvo=$row['svojstvo'];
-		${$element}=$svojstvo;
+		${$element}=mysqli_real_escape_string($mysqli,$svojstvo);
 	}
 
 ?>
